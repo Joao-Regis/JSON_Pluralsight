@@ -5,9 +5,9 @@ var xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://mds.bird.co/gbfs/los-angeles/free_bikes', true );
 //The open method doesn't really open anything. 
-//It just sets the stage.
+//It just sets the stage / sets the parameters
 //1st argument: method for retrieving information
-//2nd argument: path tp the information
+//2nd argument: path to the information
 //3rd argument: whether or not to retieve info asynchronously
 
 xhr.onload = function() {
@@ -25,4 +25,6 @@ xhr.onload = function() {
 
 
 xhr.send();
-//the send method actually starts the entire process rolling
+//the send doesn't send anything
+//send method activates the open 
+//actually starts the entire process rolling
